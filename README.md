@@ -37,4 +37,10 @@ Also found some priceless code in /etc/gdm/Init:
 
 ![lol](https://github.com/user-attachments/assets/281a1429-34ce-4104-95e2-c69f34aa5480)
 
-I eventually gave up.
+I eventually gave up. Went to sddm on KDE. 
+
+https://blog.floo.fi/changes/installing-alpine-linux-and-kde-plasma
+
+Went to `/usr/share/sddm/scripts/Xsetup` nano into it: setxkbmap "language"
+
+And boom it was finally fixed :)
