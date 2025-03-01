@@ -62,5 +62,19 @@ Create an alias `alias start-de="rc-service sddm start"`
 
 Boom now you have the Desktop at hand, just one SHORT command away. 
 
+---
+
+Cool set up for qemu:
+```
+import subprocess
+def run_tailvm(image_name):
+    # Run the VM
+    print(f"Started {image_name}, with {cores} cores and {ram} MB of RAM.")
+    command = f"qemu-system-x86_64 -enable-kvm -m {ram} -cpu host -smp {cores} -hda {image_name} -boot c -serial mon:stdio -display none -vnc :0"
+```
+
+so we redirect the shell to our shell, set the display to none, but have a VNC ready. 
+
+You can then connect with any VNC client `vncviewer localhost:0` 
 
 
