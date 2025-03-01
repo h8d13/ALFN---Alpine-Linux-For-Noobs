@@ -41,9 +41,11 @@ I eventually gave up. Went to sddm on KDE.
 
 https://blog.floo.fi/changes/installing-alpine-linux-and-kde-plasma
 
-Went to `/usr/share/sddm/scripts/Xsetup` nano into it: setxkbmap "language"
+Went to `/usr/share/sddm/scripts/Xsetup` nano into it and add: `setxkbmap "language"` 
 
-And boom it was finally fixed :)
+For example: `setxkbmap "fr"
+
+And boom it was finally fixed :) Thanks to the link above!
 
 ---
 
