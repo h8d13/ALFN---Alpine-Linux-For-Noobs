@@ -5,8 +5,7 @@ Follow up on the arch linux for noob guide. Go check it out or this won't make s
 Installation hacks:
 
 - setup-alpine
-Follow the steps, case sensitive. Use most default first options personally. 
-- setup-user
+Follow the steps, case sensitive. Use most default first options personally. Create a user as it will allow you to skip: setup-user
 
 apk update
 apk upgrade
@@ -14,7 +13,6 @@ apk upgrade
 - setup-xorg-base 
 - setup-desktop
 
-Apk add xorgproto
 Apk search <whatdoyouwant?>
 
 poweroff / reboot
