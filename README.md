@@ -29,5 +29,12 @@ That's it. It's quite cool.
 
 --- 
 
-Struggled a but with the Keyboard locales being reset when using a DE. Had to go to `/etc/conf.d/loadkeys`
+Struggled a but with the Keyboard locales, they work inside Gnome but not at GDM login screen. 
 
+Also found some priceless code in /etc/gdm/Init:
+
+![wow](https://github.com/user-attachments/assets/149e5dee-ac40-4b87-9dc7-b894194c9b55)
+
+![lol](https://github.com/user-attachments/assets/281a1429-34ce-4104-95e2-c69f34aa5480)
+
+I eventually gave up.
