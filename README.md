@@ -44,3 +44,23 @@ https://blog.floo.fi/changes/installing-alpine-linux-and-kde-plasma
 Went to `/usr/share/sddm/scripts/Xsetup` nano into it: setxkbmap "language"
 
 And boom it was finally fixed :)
+
+---
+
+Now as alwyas we want this alpine install to be raid boss mode. 
+To do this we are going to do some cool setup idea. 
+
+
+You see want the Desktop Env, but only sometimes. What I mean is I need terminal access often but not full DE all the time.
+
+`rc-update del sddm default` 
+
+Reboot. Now any time you want the actual de you can `rc-service sddm start` 
+
+`nano ~/.profile` This is your ash home. 
+Create an alias `alias start-de="rc-service sddm start"`
+
+Boom now you have the Desktop at hand, just one SHORT command away. 
+
+
+
