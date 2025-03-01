@@ -77,4 +77,4 @@ so we redirect the shell to our shell, set the display to none, but have a VNC r
 
 You can then connect with any VNC client `vncviewer localhost:0` 
 
-
+Go back to your alias file and add a stop-de with stop instead of start. 
