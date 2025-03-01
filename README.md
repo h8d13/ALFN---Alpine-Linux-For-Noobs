@@ -91,4 +91,8 @@ Welcome to Alpine! Custom scripts by H8D13.
 B=> Average Sized <=B
 ``` 
 
+This allows for a kind of dual set-up but just when needed in terms of ressources ? 
+
+![Dual](https://github.com/user-attachments/assets/ea1dcad5-0cbb-4060-ad5e-35c0326c59a1)
+
 
