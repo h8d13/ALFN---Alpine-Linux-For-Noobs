@@ -78,3 +78,16 @@ so we redirect the shell to our shell, set the display to none, but have a VNC r
 You can then connect with any VNC client `vncviewer localhost:0` 
 
 Go back to your alias file and add a stop-de with stop instead of start. 
+
+
+```
+Started ./c/myvm4.qcow2, with 8 cores and 8096 MB of RAM.
+
+Welcome to Alpine Linux 3.21
+Kernel 6.12.17-0-lts on an x86_64 (/dev/ttyS0)
+
+Welcome to Alpine! Custom scripts by H8D13.
+B=> Average Sized <=B
+``` 
+
+
