@@ -26,3 +26,8 @@ Coolest part of alpine is that with all the tools for Gnome my install only was 
 `Finished! Processed 2926.81 MB in 4.72 seconds (620.26 MB/s)` 
 
 That's it. It's quite cool.
+
+--- 
+
+Struggled a but with the Keyboard locales being reset when using a DE. Had to go to `/etc/conf.d/loadkeys`
+
