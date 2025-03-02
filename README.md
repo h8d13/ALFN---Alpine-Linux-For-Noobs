@@ -97,4 +97,16 @@ This allows for a kind of dual set-up but just when needed in terms of ressource
 
 ![Dual](https://github.com/user-attachments/assets/ea1dcad5-0cbb-4060-ad5e-35c0326c59a1)
 
+Fpr example you can also kill a process from shell when frozen in DE. 
+
+pgrep problem
+pkill ID
+
+More useful stuff
+
+tail -f /var/log/messages
+dmesg -w
+rc-service <service_name> status
+
+
 
