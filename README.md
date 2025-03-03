@@ -13,7 +13,8 @@ apk upgrade
 - setup-xorg-base 
 - setup-desktop
 
-Apk search <whatdoyouwant?>
+apk search <whatdoyouwant?>
+apk add/del 
 
 poweroff / reboot
 
@@ -98,18 +99,23 @@ This allows for a kind of dual set-up but just when needed in terms of ressource
 
 ![Dual](https://github.com/user-attachments/assets/ea1dcad5-0cbb-4060-ad5e-35c0326c59a1)
 
-Fpr example you can also kill a process from shell when frozen in DE. 
+Fòr example you can also kill a process from shell when frozen in DE. 
 
+```
 pgrep problem
-pkill ID
+kill ID
 
 More useful stuff
 
-apk add xkill (another one for frozen stuff) 
+apk add xkill (another one for frozen stuff lets you just click it to kill) 
 
+Kernel logs
 tail -f /var/log/messages
 dmesg -w
+
+Services
 rc-service <service_name> status
+```
 
 
 
