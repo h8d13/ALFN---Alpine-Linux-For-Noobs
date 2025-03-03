@@ -105,6 +105,8 @@ pkill ID
 
 More useful stuff
 
+apk add xkill (another one for frozen stuff) 
+
 tail -f /var/log/messages
 dmesg -w
 rc-service <service_name> status
