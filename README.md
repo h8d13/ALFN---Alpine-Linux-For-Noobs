@@ -61,6 +61,7 @@ Reboot. Now any time you want the actual de you can `rc-service sddm start`
 
 `nano ~/.profile` This is your ash home. 
 Create an alias `alias start-de="rc-service sddm start"`
+`source ~/.profile` to apply changes.
 
 Boom now you have the Desktop at hand, just one SHORT command away. 
 `start-de` and voilà.
