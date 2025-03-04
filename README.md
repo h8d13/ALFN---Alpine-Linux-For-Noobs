@@ -136,6 +136,8 @@ I created aliases on the user to edit/apply the aliases 🧠
 
 Then I realized i was an idiot. So instead the source (apply changes) thing should go in the autorun (we mentionned above). 
 
+So I believe the right way to do this is either setting env variables in the doas to share a shell or to autoimport the .profile files. 
+
 
 ---
 
