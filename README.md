@@ -127,6 +127,8 @@ Log out and back in then you can doas <command> and enter your root password.
 These configs files live in /etc/doas.d/doas.conf
 The idea is that if you're setting up a server don't give the same permissions as a DE, and use stronger passwords. 
 
+Now modify your scripts so that they use the perm prefix `doas` when it's necessary. 
+
 ---
 
 ## Qemu setup:
