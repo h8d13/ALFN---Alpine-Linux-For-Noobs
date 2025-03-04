@@ -67,6 +67,7 @@ Boom now you have the Desktop at hand, just one SHORT command away.
 `start-de` and voilà.
 
 Example:
+
 ![example](https://github.com/user-attachments/assets/7ca10bd5-2fc4-4a0c-a9c1-ec741387f0f0)
 
 _You can see also that you can create scripts on the user and link them this way_
@@ -76,11 +77,26 @@ Don't forget to `chmod +x <script.sh>`
 Couple of other things to customize: 
 `/etc/profile.d` Any script in here that is executable will run automatically at login. 
 
+apk add fastfetch
+Create a simple script ff.sh:
+
+```
+#!/bin/sh
+
+fastfetch
+```
+Now you will have the nice fast fetch logo everytime you log-in. 
+The first line is a shebang, it basically is an identifier for what to use to run the script. 
+
+The same could be applied to a Python script using: `#!/bin/python3` 
+
 Understand the core file system:
 The `~` means home directory (if you are root it will be empty, that's normal) 
 You can cd `/` then `ls` to start seeing all the system files. 
 
 If you are a user (provided you created one) then you will see Desktop, Documents, etc 
+
+If you go to /bin you can find all the possibilites. In this case python is not in the root /bin but in the /usr/bin. So we will change the shebang to `#!/usr/bin/python3` you can use `which python` to find out. 
 
 ---
 
