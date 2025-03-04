@@ -107,7 +107,6 @@ _You can see also that you can create scripts on the user and easily link them s
 
 My launch script (ff.sh):
 
-![launchscript](https://github.com/user-attachments/assets/dfeb2f9e-1294-4325-900c-ea1854e56779)
 
 ---
 
