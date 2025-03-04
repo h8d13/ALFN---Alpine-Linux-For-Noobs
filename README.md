@@ -104,7 +104,10 @@ _You can see also that you can create scripts on the user and easily link them s
 
 ---
 
-Cool set up for qemu:
+## Qemu setup:
+
+Insanely raidboss mode. 
+
 ```
 import subprocess
 def run_tailvm(image_name):
