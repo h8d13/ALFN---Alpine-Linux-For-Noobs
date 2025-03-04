@@ -82,6 +82,9 @@ Create a simple script ff.sh:
 fastfetch
 sleep 5
 clear
+
+
+
 ```
 Now you will have the nice fast fetch logo everytime you log-in. 
 The first line is a shebang, it basically is an identifier for what to use to run the script. 
@@ -104,7 +107,9 @@ Example:
 
 _You can see also that you can create scripts on the user and easily link them system wide this way_
 
+My launch script (ff.sh):
 
+![launchscript](https://github.com/user-attachments/assets/dfeb2f9e-1294-4325-900c-ea1854e56779)
 
 ---
 
