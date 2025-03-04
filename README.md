@@ -134,7 +134,7 @@ I created aliases on the user to edit/apply the aliases 🧠
 
 ![500iq](https://github.com/user-attachments/assets/23b57df3-8783-4ca8-9390-78cf52dcdbe4)
 
-
+Then I realized i was an idiot. So instead the source (apply changes) thing should go in the autorun (we mentionned above). 
 
 
 ---
