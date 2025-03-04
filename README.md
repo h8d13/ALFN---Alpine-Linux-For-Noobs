@@ -66,12 +66,6 @@ Create an alias `alias start-de="rc-service sddm start"`
 Boom now you have the Desktop at hand, just one SHORT command away. 
 `start-de` and voilà.
 
-Example:
-
-![example](https://github.com/user-attachments/assets/7ca10bd5-2fc4-4a0c-a9c1-ec741387f0f0)
-
-_You can see also that you can create scripts on the user and link them this way_
-
 Don't forget to `chmod +x <script.sh>` 
 
 Couple of other things to customize: 
@@ -88,7 +82,7 @@ fastfetch
 Now you will have the nice fast fetch logo everytime you log-in. 
 The first line is a shebang, it basically is an identifier for what to use to run the script. 
 
-The same could be applied to a Python script using: `#!/bin/python3` 
+The same could be applied to a Python script using: `#!/bin/python` 
 
 Understand the core file system:
 The `~` means home directory (if you are root it will be empty, that's normal) 
@@ -96,7 +90,17 @@ You can cd `/` then `ls` to start seeing all the system files.
 
 If you are a user (provided you created one) then you will see Desktop, Documents, etc 
 
-If you go to /bin you can find all the possibilites. In this case python is not in the root /bin but in the /usr/bin. So we will change the shebang to `#!/usr/bin/python3` you can use `which python` to find out. 
+If you go to /bin you can find all the possibilites. In this case python is not in the root /bin but in the /usr/bin. So we will change the shebang to `#!/usr/bin/python` you can use `which python` to find out. 
+
+Don't forget to `source ~/.profile` everytime you make add an alias.
+
+Example:
+
+![ex](https://github.com/user-attachments/assets/6dfd515b-44f8-453f-8170-0e8309de9250)
+
+_You can see also that you can create scripts on the user and easily link them system wide this way_
+
+
 
 ---
 
