@@ -109,6 +109,9 @@ My launch script (ff.sh):
 
 ![launchscript](https://github.com/user-attachments/assets/4c6b0319-7e55-4541-a7b5-fe2851105f4c)
 
+
+Then you can also apply the same logic but only to a specific profile by going `nano /home/user/.profile` 
+
 ---
 
 ## Qemu setup:
