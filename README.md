@@ -109,8 +109,7 @@ _You can see also that you can create scripts on the user and easily link them s
 
 My launch script (ff.sh):
 
-![launchscript](https://github.com/user-attachments/assets/4c6b0319-7e55-4541-a7b5-fe2851105f4c)
-
+![simple](https://github.com/user-attachments/assets/a7d92ea0-9670-48f9-98d2-55d4a3bb97b5)
 
 You can apply the same logic user specific by doing doing the same on the profile. You would just have to use `doas` (Equivalent of Sudo)
 
