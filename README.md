@@ -16,6 +16,8 @@ apk upgrade
 apk search <whatdoyouwant?>
 apk add/del 
 
+(apk add linux-utils) 
+
 poweroff / reboot
 
 https://wiki.alpinelinux.org/wiki/Desktop_environments_and_Window_managers
