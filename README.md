@@ -112,6 +112,21 @@ My launch script (ff.sh):
 
 You can apply the same logic user specific by doing doing the same on the profile. You would just have to use `doas` (Equivalent of Sudo)
 
+You will also find the config file at: `/etc/doas.conf` 
+
+You can add a permission: 
+`su` to root
+``` 
+apk add doas 
+echo 'permit :wheel' > /etc/doas.d/doas.conf 
+adduser joe wheel 
+su -l joe 
+```
+
+Log out and back in then you can doas <command> and enter your root password.
+These configs files live in /etc/doas.d/doas.conf
+The idea is that if you're setting up a server don't give the same permissions as a DE, and use stronger passwords. 
+
 ---
 
 ## Qemu setup:
