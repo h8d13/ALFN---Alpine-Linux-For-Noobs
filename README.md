@@ -181,5 +181,5 @@ rc-service <service_name> status
 
 We've gone full circle by creating making our shell logged into root able to start/stop the DE and having access to stop command on the DE too. 
 The scripts are illustrative, you can of course do this with other shells, or go further into automation!
-That's it folkssss
+That's it folkssss. BONUS GIFT: apk add micro, then micro <file>. My personal favourite. 
 
