@@ -115,7 +115,7 @@ You can apply the same logic user specific by doing doing the same on the profil
 
 You will also find the config file at: `/etc/doas.conf` 
 
-You can add a permission: 
+You can add a permission: From their docs (but we have documentation, a true noob has to brick the install 50 times)
 `su` to root
 ``` 
 apk add doas 
