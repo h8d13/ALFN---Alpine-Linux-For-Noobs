@@ -172,5 +172,6 @@ rc-service <service_name> status
 ```
 
 
-
+We've gone full circle by creating making our shell logged into root able to start/stop the DE and having access to stop command on the DE too. 
+That's it folkssss
 
