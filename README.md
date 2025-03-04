@@ -66,6 +66,15 @@ Create an alias `alias start-de="rc-service sddm start"`
 Boom now you have the Desktop at hand, just one SHORT command away. 
 `start-de` and voilà.
 
+Couple of other things to customize: 
+`/etc/profile.d` Any script in here that is executable will run automatically at login. 
+
+Understand the core file system:
+The `~` means home directory (if you are root it will be empty, that's normal) 
+You can cd `/` then `ls` to start seeing all the system files. 
+
+If you are a user (provided you created one) then you will see Desktop, Documents, etc 
+
 ---
 
 Cool set up for qemu:
@@ -104,6 +113,7 @@ dmesg -w
 Services
 rc-service <service_name> status
 ```
+
 
 
 
