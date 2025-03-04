@@ -90,7 +90,9 @@ The first line is a shebang, it basically is an identifier for what to use to ru
 The same could be applied to a Python script using: `#!/bin/python` 
 
 Understand the core file system:
-The `~` means home directory (if you are root it will be empty, that's normal) 
+The `~` means home directory (if you are root it will be empty, that's normal).
+When you are a user the `~` will be `/home/<user>/` 
+
 You can cd `/` then `ls` to start seeing all the system files. 
 
 If you are a user (provided you created one) then you will see Desktop, Documents, etc 
