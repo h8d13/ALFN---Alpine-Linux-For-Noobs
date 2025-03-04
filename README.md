@@ -80,6 +80,8 @@ Create a simple script ff.sh:
 #!/bin/sh
 
 fastfetch
+sleep 5
+clear
 ```
 Now you will have the nice fast fetch logo everytime you log-in. 
 The first line is a shebang, it basically is an identifier for what to use to run the script. 
