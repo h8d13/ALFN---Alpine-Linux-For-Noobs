@@ -66,6 +66,13 @@ Create an alias `alias start-de="rc-service sddm start"`
 Boom now you have the Desktop at hand, just one SHORT command away. 
 `start-de` and voilà.
 
+Example:
+![example](https://github.com/user-attachments/assets/7ca10bd5-2fc4-4a0c-a9c1-ec741387f0f0)
+
+_You can see also that you can create scripts on the user and link them this way_
+
+Don't forget to `chmod +x <script.sh>` 
+
 Couple of other things to customize: 
 `/etc/profile.d` Any script in here that is executable will run automatically at login. 
 
