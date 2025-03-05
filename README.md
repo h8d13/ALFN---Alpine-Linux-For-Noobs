@@ -186,3 +186,8 @@ We've gone full circle by creating making our shell logged into root able to sta
 The scripts are illustrative, you can of course do this with other shells, or go further into automation!
 That's it folkssss. BONUS GIFT: apk add micro, then micro <file>. My personal favourite. 
 
+
+Also here is another alias for you:
+
+alias wiztree="du -h / | sort -rh | head -n 20" 
+
