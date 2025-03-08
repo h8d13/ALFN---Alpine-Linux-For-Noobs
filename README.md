@@ -139,11 +139,10 @@ Then I realized i was an idiot. So instead the source (apply changes) thing shou
 So I believe the right way to do this is either setting env variables in the doas to share a shell or to autoimport the .profile files. 
 
 ## To properly have you aliases loaded everytime on Alpine (.profile  & .ashrc)
-> First go to profile and add `export
+> First go to profile and add
+`export ENV=~/.ashrc`
 
-`ENV=~/.ashrc`
 > Then add the desired commands to
-
 `~/.profile`
 
 Profile will be run on login meaning your aliases are loaded :)
