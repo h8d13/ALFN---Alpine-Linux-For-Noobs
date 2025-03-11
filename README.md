@@ -187,13 +187,65 @@ Services
 rc-service <service_name> status
 ```
 
+We've gone full circle by creating making our shell logged into root able to start/stop the DE and having access to stop command on the DE too.
 
-We've gone full circle by creating making our shell logged into root able to start/stop the DE and having access to stop command on the DE too. 
 The scripts are illustrative, you can of course do this with other shells, or go further into automation!
 That's it folkssss. BONUS GIFT: apk add micro, then micro <file>. My personal favourite. 
 
 
-Also here is another alias for you:
+Here is my full alias list for anyone who's looking for inspiration:
+---
 
-alias wiztree="du -h / | sort -rh | head -n 20" 
+On root only have the startde command and changed the /etc/motd to indicate this. 
 
+For the user in his `~/.ashrc`:
+``` 
+# BASE #
+alias stopde="doas rc-service sddm stop"
+
+alias comms="cat ~/.ashrc | sed 's/alias//g'"
+alias editpc="doas micro ~/.ashrc"
+alias updapc="doas apk update && doas apk upgrade"
+alias rb="doas reboot"
+alias po="doas poweroff"
+alias rcshow="rc-update show"
+alias logd="doas tail -f /var/log/messages"
+alias logds="doas dmesg -r"
+
+# FAST #
+alias ..="cd .."
+alias ...="cd ../.."
+alias ho="cd ~"
+alias sy="cd /"
+alias clr="clear"
+alias lsh="ls -la"
+
+# UTIL #
+alias wztree="doas du -h / | sort -rh | head -n 30"
+alias wzhere="doas du -h . | sort -rh | head -n 15"
+
+alias apklean="doas apk clean cache"
+alias apkadd="doas apk add"
+alias apkdel="doas apk del"
+alias apks="doas apk search"
+alias genpw="head /dev/urandom | tr -dc A-Za-z0-9 | head -c 21; echo"
+
+# UTIL+$ #
+alias iapps="~/Scripts/trim.sh"
+
+# APPS #
+
+alias sysm="top"
+
+# REPL #
+alias mv="mv -i"
+alias sudo="doas"
+alias cls="clr"
+
+# END #
+
+if [ -t 0 ]; then
+        echo "Hi $USER > $PWD"
+fi
+
+``` 
