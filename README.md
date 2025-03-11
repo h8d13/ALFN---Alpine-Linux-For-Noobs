@@ -249,3 +249,24 @@ if [ -t 0 ]; then
 fi
 
 ``` 
+
+
+---
+
+Trim.sh in ~/Scripts example: iapps <search> 
+
+```
+#!/bin/sh
+# this script lets you search your installed packages easily
+
+if [ -z "$1" ]; then
+	echo "Missing search term"
+	exit 1
+fi
+
+apk list --installed | grep "$1"
+```
+
+
+
+
