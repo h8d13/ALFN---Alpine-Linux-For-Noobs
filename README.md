@@ -61,9 +61,9 @@ You see want the Desktop Env, but only sometimes. What I mean is I need terminal
 
 Reboot. Now any time you want the actual de you can `rc-service sddm start` 
 
-`nano ~/.profile` This is your ash home. 
+`nano ~/.ashrc` This is your ash home. 
 Create an alias `alias start-de="rc-service sddm start"`
-`source ~/.profile` to apply changes.
+`source ~/.ashrc` to apply changes.
 
 Boom now you have the Desktop at hand, just one SHORT command away. 
 `start-de` and voilà.
@@ -98,8 +98,6 @@ You can cd `/` then `ls` to start seeing all the system files.
 If you are a user (provided you created one) then you will see Desktop, Documents, etc 
 
 If you go to /bin you can find all the possibilites. In this case python is not in the root /bin but in the /usr/bin. So we will change the shebang to `#!/usr/bin/python` you can use `which python` to find out. 
-
-Don't forget to `source ~/.profile` everytime you make add an alias.
 
 Example:
 
@@ -136,14 +134,14 @@ I created aliases on the user to edit/apply the aliases 🧠
 
 Then I realized i was an idiot. So instead the source (apply changes) thing should go in the autorun (we mentionned above). 
 
-So I believe the right way to do this is either setting env variables in the doas to share a shell or to autoimport the .profile files. 
+## So here is how to do it properly! 
+To properly have you aliases loaded everytime on Alpine (.profile  & .ashrc) without having to 'source' everytime. 
 
-## To properly have you aliases loaded everytime on Alpine (.profile  & .ashrc)
-> First go to profile and add
+> First go to `~/.profile` and add
 `export ENV=~/.ashrc`
 
 > Then add the desired commands to
-`~/.profile`
+`~/.ashrc`
 
 Profile will be run on login meaning your aliases are loaded :)
 
