@@ -213,10 +213,6 @@ alias logd="doas tail -f /var/log/messages"
 alias logds="doas dmesg -r"
 
 # FAST #
-alias ..="cd .."
-alias ...="cd ../.."
-alias ho="cd ~"
-alias sy="cd /"
 alias clr="clear"
 alias lsh="ls -la"
 
