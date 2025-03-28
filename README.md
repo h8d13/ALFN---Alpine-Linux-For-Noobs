@@ -267,6 +267,7 @@ fi
 apk list --installed | grep "$1"
 ```
 
-
+Here is also my .profile set up
+[.profile for alpine](https://gist.github.com/h8d13/18cfe3fb7b9517e4186607f7b8b067cb)
 
 
