@@ -241,12 +241,37 @@ alias sysm="top"
 alias mv="mv -i"
 alias sudo="doas"
 alias cls="clr"
+# ~/.profile: executed by Bourne-compatible login shells
 
-# END #
-
-if [ -t 0 ]; then
-        echo "Hi $USER > $PWD"
+# Prompt that better adapts to terminal size changes
+if [ $(id -u) -eq 0 ]; then
+    # Root user prompt with dynamic adjustment
+    export PS1='\033[0;31m┌──[\033[01;31mroot\033[01;33m@\033[01;96m\h\033[0;31m]─[\033[0;32m\w\033[0;31m]\n\033[0;31m└──╼ \033[01;33m# \033[0m'
+else
+    # Regular user prompt with dynamic adjustment
+    export PS1='\033[0;31m┌──[\033[0;39m\u\033[01;33m@\033[01;96m\h\033[0;31m]─[\033[0;32m\w\033[0;31m]\n\033[0;31m└──╼ \033[01;33m$ \033[0m'
 fi
+
+# Make Konsole update its size information after resizing
+shopt -s checkwinsize 2>/dev/null || : # Safely try to set bash option
+
+# Enable colors for ls
+export CLICOLOR=1
+
+# Set color options for ls
+if [ -x /bin/ls ] || [ -x /usr/bin/ls ]; then
+    # For Alpine, use BusyBox ls with color option
+    alias ls='ls --color=auto'
+    alias ll='ls -la --color=auto'
+    alias la='ls -a --color=auto'
+    alias l='ls -CF --color=auto'
+fi
+
+# Set TERM appropriately for better color support
+export TERM=xterm-256color
+
+# Configure line wrapping to handle long paths better
+tput rmam 2>/dev/null || : # Turn off auto-margin (line wrapping) for status line
 
 ``` 
 
@@ -266,8 +291,5 @@ fi
 
 apk list --installed | grep "$1"
 ```
-
-Here is also my .profile set up
-[.profile for alpine](https://gist.github.com/h8d13/18cfe3fb7b9517e4186607f7b8b067cb)
 
 
